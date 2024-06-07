@@ -87,7 +87,7 @@ def main():
     num_recomendaciones = st.selectbox('Selecciona el número de recomendaciones que deseas:', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
     # Obtener la lista de estados únicos del dataframe para generar lista desplegable que le aparece al usuario 
-    estados_unicos = df_comb_sitio_review['estado'].unique().tolist()
+    estados_unicos = sorted(df_comb_sitio_review['estado'].unique().tolist())
     # Seleccionar el estado del restaurante
     estado = st.selectbox('Selecciona el estado donde deseas la recomendacion:', estados_unicos)
 
