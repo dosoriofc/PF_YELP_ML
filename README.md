@@ -9,16 +9,16 @@ Ver el Sistema en Funcionamiento: [Sistema de Recomendación de Restaurantes](ht
 
 El algoritmo de recomendacion se desarrollo en Python utilizando la biblioteca open-source de Machine Learning Scikit-learn, y principalmente hace uso de dos de sus funciones TfidfVectorizer y Cosine_similarity. Adicionalmente, se utilizaron las bibliotecas de Python NLTK/SentimentIntensityAnalyzer para el analisis de sentimientos de las reseñas y fuzzywuzzy para la homologacion de las categorias, y finalmente Streamlit para el desarrollo de la la interfaz web interactiva.
 
-- Scikit-learn 
-- TfidfVectorizer: se utilizó para el procesamiento de lenguaje natural (NLP) para transformar el texto de las reseñas en vectores nùmericos que fueron utilizadas en el algoritmo de similitud.
-- Cosine_similarity: se utilizó para calcular la similitud (mediante el algoritmo de la similitud del coseno) entre todos los vectores numéricos que representan las reseñas de los usuarios.
+1. Scikit-learn 
+  - TfidfVectorizer: se utilizó para el procesamiento de lenguaje natural (NLP) para transformar el texto de las reseñas en vectores nùmericos que fueron utilizadas en el algoritmo de similitud.
+  - Cosine_similarity: se utilizó para calcular la similitud (mediante el algoritmo de la similitud del coseno) entre todos los vectores numéricos que representan las reseñas de los usuarios.
 
-- NLTK (Natural Language Toolkit)
-- SentimentIntensityAnalyzer: se utilizó para evaluar el tono emocional de las reseñas y obtener una puntuación de sentimiento que refleja la positividad, negatividad, neutralidad del sentimiento expresado en las reseñas.
+2. NLTK (Natural Language Toolkit)
+  - SentimentIntensityAnalyzer: se utilizó para evaluar el tono emocional de las reseñas y obtener una puntuación de sentimiento que refleja la positividad, negatividad, neutralidad del sentimiento expresado en las reseñas.
 
-- Fuzzywuzzy: se utilizó para comparar las categorías de ambos set de datos, Google y Yelp, y obtener una puntuación de similitud que va del 0% al 100%, donde una puntuación del 100% indica que las cadenas son idénticas; esto se hizo para generar un listado reducido y estandarizado de categorías 
+3. Fuzzywuzzy: se utilizó para comparar las categorías de ambos set de datos, Google y Yelp, y obtener una puntuación de similitud que va del 0% al 100%, donde una puntuación del 100% indica que las cadenas son idénticas; esto se hizo para generar un listado reducido y estandarizado de categorías 
 
-- Streamlit: se utilizó para crear interfaz web interactiva que permite el ingreso de los datos y las selecciones de los usuarios y mostrar el resultado del sistema de recomendaciòn  
+4. Streamlit: se utilizó para crear interfaz web interactiva que permite el ingreso de los datos y las selecciones de los usuarios y mostrar el resultado del sistema de recomendaciòn  
 
 ## Datos de Entrada:
 El sistema permite al usuario ingresar y seleccionar los siguientes paramètros para pedir la recomendación:
@@ -35,8 +35,8 @@ El sistema permite al usuario ingresar y seleccionar los siguientes paramètros 
 
 ## Caso de Uso
 Valores de entrada:
-cliente_id = '118267217160812717861'
-número de recomendaciones: 3
-estado: Florida
-categoria: Italian restaurant
+- cliente_id = 118267217160812717861
+- Número de recomendaciones: 3
+- Estado: Florida
+- Categoria: Italian restaurant
 
